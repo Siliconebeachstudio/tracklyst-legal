@@ -16,7 +16,7 @@ body {
   color: #111;
 }
 
-h1, h2 {
+h1, h2, h3 {
   margin-top: 30px;
 }
 
@@ -43,10 +43,10 @@ p {
 <body>
 
 <h1>Privacy Policy – Tracklyst</h1>
-<p><strong>Last Updated: February 27, 2026</strong></p>
+<p><strong>Last Updated: March 15, 2026</strong></p>
 
 <section>
-<p>This Privacy Policy explains how Tracklyst (the “App”) collects, uses, stores, and shares information when you use the App.</p>
+<p>This Privacy Policy explains how Tracklyst (the "App") collects, uses, stores, and shares information when you use the App.</p>
 
 <p><strong>Owner:</strong> Muhammad Khan<br>
 <strong>Contact:</strong> siliconbeachstudio@outlook.com</p>
@@ -56,135 +56,327 @@ p {
 
 <section>
 <h2>1) Summary</h2>
-<p>
-Your study data is stored locally on your device.
-Subscriptions are processed by Apple through the App Store.
-We use RevenueCat to manage subscription status and entitlements.
-We do not sell your personal data.
-You can export your data as a JSON file and control where it is stored or shared.
-We do not use your data for tracking across apps and websites.
-</p>
+
+<p>Your study data is stored locally on your device.</p>
+<p>Subscriptions are processed by Apple through the App Store.</p>
+<p>We use RevenueCat to manage subscription status and entitlements.</p>
+<p>We use PostHog for first-party analytics to improve the App.</p>
+<p>We do not sell your personal data or track you across other apps and websites.</p>
+<p>You can export your data as a JSON file and control where it is stored or shared.</p>
+
 </section>
 
 <section>
 <h2>2) Information We Collect</h2>
 
 <h3>2.1 Data You Create or Enter (Stored Locally)</h3>
-<p>The App may store information locally on your device, such as:</p>
+
+<p>The App stores information locally on your device, including:</p>
+
+<p><strong>Study Data:</strong></p>
 <ul>
-<li>study sessions</li>
-<li>daily/weekly goals</li>
-<li>preferences and settings</li>
-<li>backup/export data (when you export)</li>
+<li>Study sessions (duration, subject, mood, completion status)</li>
+<li>Daily and weekly study goals</li>
+<li>Study streaks and progress metrics</li>
+<li>Session timestamps and history</li>
 </ul>
 
-<h3>2.2 Notifications Data</h3>
+<p><strong>Preferences and Settings:</strong></p>
+<ul>
+<li>Theme selections and app preferences</li>
+<li>Sound and vibration settings</li>
+<li>Notification preferences and reminder times</li>
+<li>Timer presets and custom durations</li>
+</ul>
+
+<p><strong>Onboarding Data:</strong></p>
+<ul>
+<li>User preferences and choices during onboarding</li>
+<li>Initial goal settings and study preferences</li>
+</ul>
+
+<h3>2.2 Analytics and Usage Data</h3>
+
+<p>We use PostHog, a first-party analytics service, to understand how users interact with the App:</p>
+
+<p><strong>Usage Patterns:</strong></p>
+<ul>
+<li>Screen views and navigation within the App</li>
+<li>Feature usage (timer starts, pauses, completions)</li>
+<li>Settings changes and preference updates</li>
+<li>Pro feature access attempts and upgrade prompts</li>
+</ul>
+
+<p><strong>Technical Data:</strong></p>
+<ul>
+<li>Device type and screen dimensions</li>
+<li>App version and operating system</li>
+<li>Session identification and timing</li>
+<li>Error reports and crash data</li>
+</ul>
+
+<p><strong>What We Don't Track:</strong></p>
+<ul>
+<li>Personal identifiers beyond anonymous user IDs</li>
+<li>Location data or contact information</li>
+<li>Cross-app or cross-website activity</li>
+<li>Data shared with third parties for advertising</li>
+</ul>
+
+<h3>2.3 Notifications Data</h3>
+
 <p>If enabled, the App schedules local notifications and may store:</p>
+
+<p><strong>Notification Settings:</strong></p>
 <ul>
-<li>reminder settings (such as reminder time)</li>
-<li>internal identifiers used to manage scheduled notifications</li>
+<li>Daily reminder times and preferences</li>
+<li>Timer completion notification settings</li>
+<li>Internal identifiers for managing scheduled notifications</li>
 </ul>
 
-<h3>2.3 Subscription and Entitlement Data</h3>
-<p>Payments are processed by Apple. We use RevenueCat to determine subscription status and unlock Pro features.</p>
+<h3>2.4 Subscription and Entitlement Data</h3>
 
-<p>RevenueCat may process information such as:</p>
+<p>Payments are processed by Apple. We use RevenueCat to determine subscription status and unlock Pro features:</p>
+
+<p><strong>Subscription Information:</strong></p>
 <ul>
-<li>subscription status and entitlement status</li>
-<li>product identifiers (monthly/yearly)</li>
-<li>receipt validation data</li>
-<li>anonymous user identifiers used to manage entitlements and restores</li>
+<li>Subscription status and entitlement information</li>
+<li>Product identifiers (monthly/yearly plans)</li>
+<li>Receipt validation data and purchase history</li>
+<li>Anonymous user identifiers for entitlement management</li>
 </ul>
 
-<h3>2.4 Technical Information</h3>
-<p>We may process limited technical information for functionality and stability, such as:</p>
+<h3>2.5 Technical Information</h3>
+
+<p>We process limited technical information for functionality and stability:</p>
+
+<p><strong>Device Information:</strong></p>
 <ul>
-<li>device type</li>
-<li>operating system version</li>
-<li>app version</li>
-<li>language/region</li>
+<li>Device type and operating system version</li>
+<li>App version and build number</li>
+<li>Language and region settings</li>
+<li>Screen dimensions and display properties</li>
 </ul>
 
-<p>We do not use this information for advertising or analytics.</p>
 </section>
 
 <section>
 <h2>3) How We Use Information</h2>
+
 <p>We use the information described above to:</p>
 
+<p><strong>Core App Functionality:</strong></p>
 <ul>
-<li>provide core features of the App</li>
-<li>track study sessions and goals</li>
-<li>manage notifications (if enabled)</li>
-<li>process subscriptions and unlock Pro features</li>
-<li>restore purchases</li>
-<li>improve performance and reliability</li>
-<li>respond to support requests</li>
+<li>Provide study timer and session tracking features</li>
+<li>Calculate study streaks and progress metrics</li>
+<li>Manage daily and weekly goals</li>
+<li>Enable theme customization and preferences</li>
 </ul>
+
+<p><strong>Analytics and Improvement:</strong></p>
+<ul>
+<li>Understand how users interact with the App</li>
+<li>Identify popular features and usage patterns</li>
+<li>Improve app performance and user experience</li>
+<li>Fix bugs and technical issues</li>
+</ul>
+
+<p><strong>Subscription Management:</strong></p>
+<ul>
+<li>Process Pro subscriptions and entitlements</li>
+<li>Restore purchases across devices</li>
+<li>Manage subscription status and billing</li>
+</ul>
+
+<p><strong>Communication and Support:</strong></p>
+<ul>
+<li>Send local notifications for study reminders</li>
+<li>Respond to user support requests</li>
+<li>Provide app updates and improvements</li>
+</ul>
+
 </section>
 
 <section>
 <h2>4) How We Share Information</h2>
 
-<p>We may share limited information with the following parties to provide the App:</p>
+<h3>4.1 Service Providers</h3>
 
-<h3>Apple</h3>
-<p>Apple processes subscription payments and provides purchase validation through the App Store.</p>
+<p>We share information with the following parties to provide the App:</p>
 
-<h3>RevenueCat</h3>
-<p>RevenueCat manages subscription entitlements and may process purchase receipts and subscription status information.</p>
+<p><strong>Apple:</strong></p>
+<ul>
+<li>Processes subscription payments through the App Store</li>
+<li>Provides purchase validation and receipt management</li>
+<li>Handles App Store distribution and updates</li>
+</ul>
 
-<h3>File Sharing Services (Export)</h3>
-<p>If you export data and share/save it (e.g., Files, iCloud, email, messaging apps), the exported file is handled by the services you choose. You control where exported data is stored or shared.</p>
+<p><strong>RevenueCat:</strong></p>
+<ul>
+<li>Manages subscription entitlements and restores</li>
+<li>Processes purchase receipts and subscription status</li>
+<li>Provides cross-device subscription synchronization</li>
+</ul>
 
-<p><strong>We do not sell your personal data.</strong></p>
+<p><strong>PostHog:</strong></p>
+<ul>
+<li>Processes first-party analytics data</li>
+<li>Stores usage patterns and anonymous user IDs</li>
+<li>Provides analytics dashboards and insights</li>
+</ul>
+
+<h3>4.2 Data Export and Sharing</h3>
+
+<p><strong>Export Control:</strong></p>
+<ul>
+<li>You initiate and control all data exports</li>
+<li>Data is exported in JSON format</li>
+<li>You choose where to store or share exported files</li>
+</ul>
+
+<p><strong>Third-Party Services:</strong></p>
+<ul>
+<li>If you share exported files via email, messaging apps, or cloud storage</li>
+<li>Those services handle the shared data according to their own policies</li>
+<li>We have no control over data after you export it</li>
+</ul>
+
+<h3>4.3 No Data Selling</h3>
+
+<ul>
+<li>Advertising purposes</li>
+<li>Cross-app tracking</li>
+<li>Marketing or promotional activities</li>
+<li>Data brokerage</li>
+</ul>
+
+<p>We do not sell, rent, or share your personal data with third parties for the purposes listed above.</p>
+
 </section>
 
 <section>
 <h2>5) Data Storage, Security, and Retention</h2>
 
+<h3>5.1 Local Storage</h3>
 <ul>
-<li>Most data is stored locally on your device.</li>
-<li>Data remains on your device until you delete it, clear app storage, or uninstall the App.</li>
-<li>Subscription records may be retained by Apple and RevenueCat according to their policies.</li>
-<li>We use reasonable security practices, but no system is 100% secure.</li>
+<li>Most data is stored locally on your device using AsyncStorage</li>
+<li>Data remains on your device until you delete it or uninstall the App</li>
+<li>The App stores up to 500 study sessions to manage storage space</li>
 </ul>
+
+<h3>5.2 Security Practices</h3>
+<ul>
+<li>We use reasonable security measures to protect your data</li>
+<li>Analytics data is transmitted securely to PostHog servers</li>
+<li>Subscription data is protected by Apple's and RevenueCat's security systems</li>
+</ul>
+
+<h3>5.3 Data Retention</h3>
+<ul>
+<li>Local data persists until you delete it or uninstall the App</li>
+<li>Analytics data is retained by PostHog according to their policies</li>
+<li>Subscription records may be retained by Apple and RevenueCat according to their policies</li>
+</ul>
+
 </section>
 
 <section>
 <h2>6) Your Choices and Controls</h2>
 
-<p>You can:</p>
-
+<h3>6.1 Analytics Preferences</h3>
 <ul>
-<li>enable or disable notifications</li>
-<li>manage or cancel subscriptions via Apple ID subscription settings</li>
-<li>restore purchases</li>
-<li>export and control your data</li>
-<li>delete the App to remove locally stored data</li>
+<li>You can request to opt out of analytics collection</li>
+<li>Contact us to disable analytics tracking for your account</li>
+<li>Opting out may affect our ability to improve the App</li>
 </ul>
+
+<h3>6.2 Data Management</h3>
+<ul>
+<li>Export your study data at any time through Settings</li>
+<li>Delete individual sessions or clear all data through the App</li>
+<li>Uninstall the App to remove all locally stored data</li>
+</ul>
+
+<h3>6.3 Notifications</h3>
+<ul>
+<li>Enable or disable notifications in App Settings</li>
+<li>Customize notification times and preferences</li>
+<li>Control notification types (reminders, timer completion)</li>
+</ul>
+
+<h3>6.4 Subscriptions</h3>
+<ul>
+<li>Manage or cancel subscriptions via Apple ID settings</li>
+<li>Restore purchases if you reinstall the App or change devices</li>
+<li>View subscription history and billing information</li>
+</ul>
+
 </section>
 
 <section>
 <h2>7) Children’s Privacy</h2>
-<p>The App is not intended for children under 13 (or the minimum age required in your jurisdiction). We do not knowingly collect personal information from children.</p>
+<p>The App is not intended for children under 13 (or the minimum age required in your jurisdiction). We do not knowingly collect personal information from children. If we become aware that we have collected information from a child, we will delete it promptly.</p>
 </section>
 
 <section>
 <h2>8) International Users</h2>
-<p>Third-party services such as Apple and RevenueCat may process information on servers located in different countries. By using the App, you acknowledge that your information may be processed outside your country.</p>
+
+<h3>8.1 Data Transfer</h3>
+<ul>
+<li>Third-party services may process information on servers located in different countries</li>
+<li>PostHog may process analytics data outside your country of residence</li>
+<li>Apple and RevenueCat may process subscription data globally</li>
+</ul>
+
+<h3>8.2 Compliance</h3>
+<ul>
+<li>We strive to comply with applicable international privacy laws</li>
+<li>You acknowledge that data processing may occur outside your country</li>
+</ul>
+
 </section>
 
 <section>
 <h2>9) Changes to This Privacy Policy</h2>
-<p>We may update this Privacy Policy from time to time. Material changes will update the “Last Updated” date. Continued use of the App means acceptance of changes.</p>
+
+<p>We may update this Privacy Policy from time to time to reflect changes in our practices, legal requirements, or app functionality. Material changes will update the "Last Updated" date and may be notified through the App or App Store updates.</p>
+
 </section>
 
 <section>
-<h2>10) Contact</h2>
-<p>If you have questions about this Privacy Policy, contact:</p>
+<h2>10) Your Rights</h2>
+
+<p>Depending on your location, you may have the following rights:</p>
+
+<p><strong>Data Access and Portability:</strong></p>
+<ul>
+<li>Request a copy of your data through export features</li>
+<li>Access your analytics and usage data upon request</li>
+</ul>
+
+<p><strong>Data Correction and Deletion:</strong></p>
+<ul>
+<li>Correct inaccurate data through the App interface</li>
+<li>Request deletion of your data and account</li>
+</ul>
+
+<p><strong>Opt-Out Rights:</strong></p>
+<ul>
+<li>Opt out of analytics collection</li>
+<li>Disable notifications and data collection</li>
+</ul>
+
+</section>
+
+<section>
+<h2>11) Contact</h2>
+
+<p>If you have questions about this Privacy Policy or want to exercise your rights, contact:</p>
 
 <p><strong>Email:</strong> siliconbeachstudio@outlook.com</p>
+
+<p><strong>Response Time:</strong> We will respond to privacy inquiries within 30 days.</p>
+
 </section>
 
 </body>
